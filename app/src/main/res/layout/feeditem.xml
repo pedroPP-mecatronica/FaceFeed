@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view_user"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_view_user"
+        app:layout_constraintTop_toTopOf="@+id/image_view_user"
+        app:layout_constraintEnd_toStartOf="@id/image_view_more"
+        tools:text="User A" />
+
+    <ImageView
+        android:id="@+id/image_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_more_horiz_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_view_username"
+        app:tint="@color/lightGray" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/image_view_user"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_user"
+        tools:text="2 min"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_baseline_language_24"
+        app:layout_constraintStart_toEndOf="@+id/text_view_time"
+        app:layout_constraintTop_toTopOf="@id/text_view_time"
+        app:tint="@color/lightGray" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/image_view_user"
+        app:layout_constraintTop_toBottomOf="@id/text_view_time"
+        app:layout_constraintEnd_toEndOf="@id/image_view_more"
+        tools:text="Et arcu vitae faucibus nisl nullam sed turpis hendrerit commodo iaculis, fringilla curabitur phasellus aliquam odio maecenas metus magna. libero felis fames velit ultrices tortor nisl himenaeos tristique posuere, quam tempor pellentesque velit porta etiam porttitor himenaeos ligula vivamus, mi posuere tempus felis commodo pellentesque suspendisse cursus."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
